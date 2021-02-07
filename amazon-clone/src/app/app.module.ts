@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { BannerComponent } from './components/banner/banner.component';
     AppRoutingModule,
     MatIconModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

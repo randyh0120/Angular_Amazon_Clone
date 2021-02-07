@@ -1,46 +1,10 @@
 <div class="products">
-  <div class="product">
+  <div class="product" *ngFor="let item of items">
     <mat-card>
-      <p>xbox one x 1TB</p>
-      <p>$ <strong>450.00</strong></p>
-      <img src="https://images-na.ssl-images-amazon.com/images/I/61H3Od2C64L._SL1400_.jpg" alt="Product Image" class="product_image">
-      <button>Add To Cart</button>
-    </mat-card>
-  </div>
-
-  <div class="product">
-    <mat-card>
-      <p>xbox one x 1TB</p>
-      <p>$ <strong>450.00</strong></p>
-      <img src="https://images-na.ssl-images-amazon.com/images/I/61H3Od2C64L._SL1400_.jpg" alt="Product Image" class="product_image">
-      <button>Add To Cart</button>
-    </mat-card>
-  </div>
-
-  <div class="product">
-    <mat-card>
-      <p>xbox one x 1TB</p>
-      <p>$ <strong>450.00</strong></p>
-      <img src="https://images-na.ssl-images-amazon.com/images/I/61H3Od2C64L._SL1400_.jpg" alt="Product Image" class="product_image">
-      <button>Add To Cart</button>
-    </mat-card>
-  </div>
-
-  <div class="product">
-    <mat-card>
-      <p>xbox one x 1TB</p>
-      <p>$ <strong>450.00</strong></p>
-      <img src="https://images-na.ssl-images-amazon.com/images/I/61H3Od2C64L._SL1400_.jpg" alt="Product Image" class="product_image">
-      <button>Add To Cart</button>
-    </mat-card>
-  </div>
-
-  <div class="product">
-    <mat-card>
-      <p>xbox one x 1TB</p>
-      <p>$ <strong>450.00</strong></p>
-      <img src="https://images-na.ssl-images-amazon.com/images/I/61H3Od2C64L._SL1400_.jpg" alt="Product Image" class="product_image">
-      <button>Add To Cart</button>
+      <p>{{item.title}}</p>
+      <p>$ <strong>{{item.price}}</strong></p>
+      <img src={{item.image}}>
+      <button (click)="addToCart()">Add To Cart</button>
     </mat-card>
   </div>
 </div>
