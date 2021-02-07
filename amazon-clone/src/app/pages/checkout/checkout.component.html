@@ -9,7 +9,7 @@
     <!-- Shopping Cart NOT Empty -->
     <div class="checkout_not_empty" *ngIf="shopping_cart.getCartLength() != 0">
       <p><strong>Shopping Cart</strong></p>
-      <app-checkout-products></app-checkout-products>
+      <app-checkout-products [checkout_products]="items"></app-checkout-products>
     </div>
   </div>
 
