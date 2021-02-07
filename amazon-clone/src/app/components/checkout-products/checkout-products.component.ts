@@ -9,7 +9,7 @@ import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 export class CheckoutProductsComponent implements OnInit {
   @Input() checkout_products: any[];
 
-  constructor(private shopping_cart_service: ShoppingCartService) { }
+  constructor(public shoping_cart_servie: ShoppingCartService) { }
 
   ngOnInit(): void {
     console.log('products: ', this.checkout_products)

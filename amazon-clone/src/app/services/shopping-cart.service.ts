@@ -32,4 +32,9 @@ export class ShoppingCartService {
     let items = this.getShoppingCartItems();
     return items ? this.getShoppingCartItems().length : 0
   }
+
+  getTotal = () => {
+    let items = this.getShoppingCartItems();
+    return items?.reduce((acc, item) => acc + item.price, 0)
+  }
 }
