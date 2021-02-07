@@ -18,6 +18,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductsComponent } from './components/products/products.component';
+import { CheckoutProductsComponent } from './components/checkout-products/checkout-products.component';
+import { SubTotalComponent } from './components/sub-total/sub-total.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ProductsComponent } from './components/products/products.component';
     CheckoutComponent,
     LoginComponent,
     BannerComponent,
-    ProductsComponent
+    ProductsComponent,
+    CheckoutProductsComponent,
+    SubTotalComponent
   ],
   imports: [
     BrowserModule,

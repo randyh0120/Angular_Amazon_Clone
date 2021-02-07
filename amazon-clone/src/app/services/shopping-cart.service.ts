@@ -27,4 +27,9 @@ export class ShoppingCartService {
     let items = localStorage.getItem('shopping_cart')
     return JSON.parse(items)
   }
+
+  getCartLength = () => {
+    let items = this.getShoppingCartItems();
+    return items ? this.getShoppingCartItems().length : 0
+  }
 }
