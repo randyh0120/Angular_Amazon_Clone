@@ -24,9 +24,4 @@ export class HomeComponent implements OnInit {
       this.items = res;
     })
   }
-
-  // This function will connect to our "Add To Cart" button
-  addToCart() {
-    console.log('added to cart')
-  }
 }
