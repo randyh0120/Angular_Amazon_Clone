@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ShoppingCartService } from 'src/app/services/shopping-cart.service';
 })
 export class CheckoutProductsComponent implements OnInit {
   @Input() checkout_products: any[];
+  @Output() deleteEvent: EventEmitter<any> = new EventEmitter();
 
   constructor(public shoping_cart_servie: ShoppingCartService) { }
 
@@ -17,5 +18,6 @@ export class CheckoutProductsComponent implements OnInit {
 
   removeItem(p) {
     this.shoping_cart_servie.removeItem(p);
+    this.deleteEvent.emit(p);
   }
 }
