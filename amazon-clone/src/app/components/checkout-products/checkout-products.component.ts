@@ -15,4 +15,7 @@ export class CheckoutProductsComponent implements OnInit {
     console.log('products: ', this.checkout_products)
   }
 
+  removeItem(p) {
+    this.shoping_cart_servie.removeItem(p);
+  }
 }
