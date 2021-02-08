@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "myclone-4fb1a": {
+      "hosting": {
+        "amazon-clone": [
+          "myclone-4fb1a"
+        ]
+      }
+    }
+  }
+}
