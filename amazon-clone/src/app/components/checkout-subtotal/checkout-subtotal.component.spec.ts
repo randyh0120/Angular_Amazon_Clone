@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubTotalComponent } from './sub-total.component';
+import { CheckoutSubtotalComponent } from './checkout-subtotal.component';
 
-describe('SubTotalComponent', () => {
-  let component: SubTotalComponent;
-  let fixture: ComponentFixture<SubTotalComponent>;
+describe('CheckoutSubtotalComponent', () => {
+  let component: CheckoutSubtotalComponent;
+  let fixture: ComponentFixture<CheckoutSubtotalComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SubTotalComponent ]
+      declarations: [ CheckoutSubtotalComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SubTotalComponent);
+    fixture = TestBed.createComponent(CheckoutSubtotalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
